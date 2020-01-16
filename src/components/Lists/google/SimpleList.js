@@ -45,6 +45,7 @@ export default function SimpleList() {
                 <ListItem button>
                     <ListItemText primary="Trash" />
                 </ListItem>
+                {/* 这里显示了如何使用ListItem渲染了一个Link */}
                 <ListItemLink href="#simple-list">
                     <ListItemText primary="Spam" />
                 </ListItemLink>
