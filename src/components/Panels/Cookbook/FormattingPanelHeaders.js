@@ -17,8 +17,7 @@ const styles = theme => ({
     }
 });
 
-const FormattingPanelHeaders = (classes) => (
-    
+const FormattingPanelHeaders = withStyles(styles)(({ classes }) => (
     <Fragment>
         <ExpansionPanel>
             <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
@@ -48,6 +47,7 @@ const FormattingPanelHeaders = (classes) => (
             </ExpansionPanelDetails>
         </ExpansionPanel>
     </Fragment>
-);
+))
 
-export default withStyles(styles)(FormattingPanelHeaders);
+
+export default FormattingPanelHeaders;
